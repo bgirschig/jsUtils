@@ -1,6 +1,6 @@
 /** @module Quadtree */
 
-import {Rectangle} from './Rectangle';
+import Rectangle from './Rectangle';
 
 /**
   * Constructs a quadtree for quickly finding points in a given zone: O(log n)
