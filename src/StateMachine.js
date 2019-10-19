@@ -3,7 +3,7 @@
 /**
  * Manages an app's state
  */
-export class StateMachine {
+export default class StateMachine {
   /**
     * @typedef {Object} options
     * @property {string[]} options.modes - The list of modes this state machine may go to
