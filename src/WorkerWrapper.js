@@ -40,4 +40,4 @@ function setData(key, data) {
   sharedData[key] = data;
 }
 
-init();
+// init();
