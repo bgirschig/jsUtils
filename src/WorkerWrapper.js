@@ -19,13 +19,14 @@ function init() {
  * @param {Object} message
  */
 async function handleMessage(message) {
-  const methodName = message.data.method;
   const params = msg.data.payload;
-  const output = await actions[methodName](...params);
+  const {method, id} = message.data;
+
+  const output = await actions[method](...params);
   postMessage({
     result: output,
-    id: msg.data.id,
-    method: msg.data.method,
+    method,
+    id,
   });
 }
 
