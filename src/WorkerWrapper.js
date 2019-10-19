@@ -19,7 +19,7 @@ function init() {
  * @param {Object} message
  */
 async function handleMessage(message) {
-  const params = msg.data.payload;
+  const params = message.data.payload;
   const {method, id} = message.data;
 
   const output = await actions[method](...params);
