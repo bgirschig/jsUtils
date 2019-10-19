@@ -2,6 +2,7 @@
   "name": "js_utils",
   "version": "1.0.0",
   "description": "A collection of javascript utities, that have proven useful on mutiple projects",
+  "repository": "https://github.com/bgirschig/jsUtils.git",
   "main": "src/index.js",
   "module": "src/index.js",
   "author": "bgirschig",
