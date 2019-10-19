@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Quadtree.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-Quadtree.html">Quadtree</a><ul class='methods'><li data-type='method'><a href="module-Quadtree.html#getPoints">getPoints</a></li><li data-type='method'><a href="module-Quadtree.html#insert">insert</a></li><li data-type='method'><a href="module-Quadtree.html#insertMulti">insertMulti</a></li><li data-type='method'><a href="module-Quadtree.html#setData">setData</a></li><li data-type='method'><a href="module-Quadtree.html#subdivide">subdivide</a></li></ul></li><li><a href="module-rectangle.html">rectangle</a><ul class='methods'><li data-type='method'><a href="module-rectangle.html#.fromDom">fromDom</a></li><li data-type='method'><a href="module-rectangle.html#.fromMinMax">fromMinMax</a></li><li data-type='method'><a href="module-rectangle.html#.fromObj">fromObj</a></li><li data-type='method'><a href="module-rectangle.html#contains">contains</a></li><li data-type='method'><a href="module-rectangle.html#fitParameters">fitParameters</a></li><li data-type='method'><a href="module-rectangle.html#intersects">intersects</a></li></ul></li><li><a href="module-StateMachine.StateMachine.html">StateMachine</a><ul class='methods'><li data-type='method'><a href="module-StateMachine.StateMachine.html#goto">goto</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#gotoTemp">gotoTemp</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#log">log</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#matchMode">matchMode</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#toggle">toggle</a></li></ul></li><li><a href="module-Vector3.html">Vector3</a><ul class='methods'><li data-type='method'><a href="module-Vector3.html#add">add</a></li><li data-type='method'><a href="module-Vector3.html#constrain">constrain</a></li><li data-type='method'><a href="module-Vector3.html#copy">copy</a></li><li data-type='method'><a href="module-Vector3.html#mult">mult</a></li><li data-type='method'><a href="module-Vector3.html#normalize">normalize</a></li><li data-type='method'><a href="module-Vector3.html#sub">sub</a></li></ul></li><li><a href="module-worker.html">worker</a><ul class='methods'><li data-type='method'><a href="module-worker.html#runSingle">runSingle</a></li><li data-type='method'><a href="module-worker.html#~handleMessage">handleMessage</a></li><li data-type='method'><a href="module-worker.html#~init">init</a></li><li data-type='method'><a href="module-worker.html#~setData">setData</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-array.html">array</a><ul class='methods'><li data-type='method'><a href="module-array.html#.average">average</a></li><li data-type='method'><a href="module-array.html#.equals">equals</a></li><li data-type='method'><a href="module-array.html#.last">last</a></li><li data-type='method'><a href="module-array.html#.max">max</a></li><li data-type='method'><a href="module-array.html#.min">min</a></li><li data-type='method'><a href="module-array.html#.roll">roll</a></li><li data-type='method'><a href="module-array.html#.sum">sum</a></li></ul></li><li><a href="module-dom.html">dom</a><ul class='methods'><li data-type='method'><a href="module-dom.html#.copyToClipboard">copyToClipboard</a></li><li data-type='method'><a href="module-dom.html#.createElement">createElement</a></li><li data-type='method'><a href="module-dom.html#.getMeta">getMeta</a></li><li data-type='method'><a href="module-dom.html#.popup">popup</a></li></ul></li><li><a href="module-math.html">math</a><ul class='methods'><li data-type='method'><a href="module-math.html#.constrain">constrain</a></li><li data-type='method'><a href="module-math.html#.gauss">gauss</a></li><li data-type='method'><a href="module-math.html#.map">map</a></li><li data-type='method'><a href="module-math.html#.smoothStep">smoothStep</a></li></ul></li><li><a href="module-NumpyLoader.html">NumpyLoader</a></li><li><a href="module-promises.html">promises</a><ul class='methods'><li data-type='method'><a href="module-promises.html#.frame">frame</a></li><li data-type='method'><a href="module-promises.html#.log">log</a></li><li data-type='method'><a href="module-promises.html#.millis">millis</a></li><li data-type='method'><a href="module-promises.html#.pauseChainFor">pauseChainFor</a></li><li data-type='method'><a href="module-promises.html#.seconds">seconds</a></li></ul></li><li><a href="module-Quadtree.html">Quadtree</a><ul class='methods'><li data-type='method'><a href="module-Quadtree.html#getPoints">getPoints</a></li><li data-type='method'><a href="module-Quadtree.html#insert">insert</a></li><li data-type='method'><a href="module-Quadtree.html#insertMulti">insertMulti</a></li><li data-type='method'><a href="module-Quadtree.html#setData">setData</a></li><li data-type='method'><a href="module-Quadtree.html#subdivide">subdivide</a></li></ul></li><li><a href="module-rectangle.html">rectangle</a><ul class='methods'><li data-type='method'><a href="module-rectangle.html#.fromDom">fromDom</a></li><li data-type='method'><a href="module-rectangle.html#.fromMinMax">fromMinMax</a></li><li data-type='method'><a href="module-rectangle.html#.fromObj">fromObj</a></li><li data-type='method'><a href="module-rectangle.html#contains">contains</a></li><li data-type='method'><a href="module-rectangle.html#fitParameters">fitParameters</a></li><li data-type='method'><a href="module-rectangle.html#intersects">intersects</a></li></ul></li><li><a href="module-StateMachine.html">StateMachine</a></li><li><a href="module-Vector3.html">Vector3</a><ul class='methods'><li data-type='method'><a href="module-Vector3.html#add">add</a></li><li data-type='method'><a href="module-Vector3.html#constrain">constrain</a></li><li data-type='method'><a href="module-Vector3.html#copy">copy</a></li><li data-type='method'><a href="module-Vector3.html#mult">mult</a></li><li data-type='method'><a href="module-Vector3.html#normalize">normalize</a></li><li data-type='method'><a href="module-Vector3.html#sub">sub</a></li></ul></li><li><a href="module-worker.html">worker</a><ul class='methods'><li data-type='method'><a href="module-worker.html#runSingle">runSingle</a></li><li data-type='method'><a href="module-worker.html#~handleMessage">handleMessage</a></li><li data-type='method'><a href="module-worker.html#~init">init</a></li><li data-type='method'><a href="module-worker.html#~setData">setData</a></li></ul></li><li></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Quadtree.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module Quadtree */
+
+import {Rectangle} from './Rectangle';
+
+/**
+  * Constructs a quadtree for quickly finding points in a given zone: O(log n)
+  * Inspired from https://github.com/CodingTrain/QuadTree
+  *
+  * There are tow modes: *normalMode* and *indexMode*
+  * - In normalMode, the methods deal directly with points (an array with 2 values). ie, when using
+  * 'getPoints', the method will return the points themselves
+  * - In indexMode, the methods deal with point indices: references to points within a dataset
+  *
+  * To use indexmode, use the 'setData' method. This will provide the data to map indices to, and
+  * construct the quadtree from it
+*/
+export default class QuadTree {
+  /**
+   * @param {Rectangle} bounds
+   * @param {Number} subdivideTreshold - Keep this much points before subdividing
+   */
+  constructor(bounds = new Rectangle(), subdivideTreshold = 5) {
+    this.subdivideTreshold = subdivideTreshold;
+    this.bounds = bounds;
+    this.divided = false;
+    this.points = [];
+    this.quadrants = [];
+    this.indexMode = false;
+    this.flatData = false;
+  }
+
+  /** Subdivide the current 'tile' into sub tiles */
+  subdivide() {
+    const {x, y} = this.bounds;
+    const w = this.bounds.w / 2;
+    const h = this.bounds.h / 2;
+
+    this.quadrants = [
+      new QuadTree(new Rectangle(x, y, w, h), this.subdivideTreshold),
+      new QuadTree(new Rectangle(x + w, y, w, h), this.subdivideTreshold),
+      new QuadTree(new Rectangle(x, y + h, w, h), this.subdivideTreshold),
+      new QuadTree(new Rectangle(x + w, y + h, w, h), this.subdivideTreshold),
+    ];
+    if (this.indexMode) {
+      this.quadrants.forEach((quadrant) => {
+        // We don't use the setData method here, to avoid running 'insert' on all
+        // points in the dataset for each subdivision
+        const quadrantRef = quadrant;
+        quadrantRef.indexMode = true;
+        quadrantRef.flatData = this.flatData;
+        quadrantRef.data = this.data;
+      });
+    }
+
+    this.divided = true;
+
+    // re-insert the self-points in the appropriate quadrant, after the division
+    this.points.forEach((point) => this.insert(point));
+    // remove self-points
+    this.points = null;
+  }
+
+  /**
+   * Insert a point into the quadtree or one of its quadrants
+   * @param {Point|Number} point - either a point or an index to a point in the
+   * data (if indexMode is true)
+   */
+  insert(point) {
+    if (this.indexMode &amp;&amp; !Number.isSafeInteger(point)) {
+      throw new Error('can\'t insert points while in indexMode');
+    }
+
+    const pointData = this.indexMode ? this._point(point) : point;
+
+    if (!this.divided &amp;&amp; this.points.length &lt; this.subdivideTreshold) {
+      if (!this.bounds.contains(pointData)) {
+        throw new Error('the point doesn\'t fit in any quadrant');
+      }
+      this.points.push(point);
+    } else {
+      if (!this.divided) this.subdivide();
+
+      // Insert the point in the first quadrant that contains it then return immediately.
+      // This helps reduce the number of operations, and prevents inserting the point
+      // twice, in case it's right on the edge of multiple bounds
+      const inserted = this.quadrants.some((quadrant) => {
+        if (quadrant.bounds.contains(pointData)) {
+          quadrant.insert(point);
+          return true;
+        }
+        return false;
+      });
+
+      if (!inserted) throw new Error(`the point doesn't fit in any quadrant: ${pointData}`);
+    }
+  }
+
+  /**
+   * Insert multiple points at the same time in the quadtree
+   * @param {Array&lt;Object>} points
+   */
+  insertMulti(points) {
+    points.forEach((point) => this.insert(point));
+  }
+
+  /**
+   * @param {Array} data
+   */
+  setData(data) {
+    this.data = data;
+    this.indexMode = true;
+
+    // find out if the given data is a flat array, or a 2d array
+    if (data[0].length === undefined) this.flatData = true;
+
+    const pointCount = this.flatData ? this.data.length / 2 : this.data.length;
+    for (let idx = 0; idx &lt; pointCount; idx += 1) this.insert(idx);
+  }
+
+  /**
+   * @private
+   * @param {Number} pointIdx
+   * @return {Object} The point corresponding to the given index
+   */
+  _point(pointIdx) {
+    if (this.flatData) {
+      const start = pointIdx * 2;
+      return this.data.slice(start, start + 2);
+    } else {
+      return this.data[pointIdx];
+    }
+  }
+
+  /**
+   * @param {Rectangle} queryBounds
+   * @return {Array&lt;Object>} the list of all the points inside the given bounds
+   */
+  getPoints(queryBounds) {
+    // eslint-disable-next-line no-param-reassign
+    if (!(queryBounds instanceof Rectangle)) queryBounds = Rectangle.fromObj(queryBounds);
+
+    if (!queryBounds.intersects(this.bounds)) return [];
+
+    if (this.divided) {
+      const pointLists = this.quadrants.map((quadrant) => quadrant.getPoints(queryBounds));
+      return [].concat(...pointLists);
+    }
+
+    if (this.indexMode) {
+      return this.points
+          .map((pointIdx) => {
+            if (queryBounds.contains(this._point(pointIdx))) return pointIdx;
+            return null;
+          })
+          .filter((item) => item !== null);
+    } else {
+      return this.points.filter((point) => queryBounds.contains(point));
+    }
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sat Oct 19 2019 17:27:53 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>StateMachine.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-Quadtree.html">Quadtree</a><ul class='methods'><li data-type='method'><a href="module-Quadtree.html#getPoints">getPoints</a></li><li data-type='method'><a href="module-Quadtree.html#insert">insert</a></li><li data-type='method'><a href="module-Quadtree.html#insertMulti">insertMulti</a></li><li data-type='method'><a href="module-Quadtree.html#setData">setData</a></li><li data-type='method'><a href="module-Quadtree.html#subdivide">subdivide</a></li></ul></li><li><a href="module-rectangle.html">rectangle</a><ul class='methods'><li data-type='method'><a href="module-rectangle.html#.fromDom">fromDom</a></li><li data-type='method'><a href="module-rectangle.html#.fromMinMax">fromMinMax</a></li><li data-type='method'><a href="module-rectangle.html#.fromObj">fromObj</a></li><li data-type='method'><a href="module-rectangle.html#contains">contains</a></li><li data-type='method'><a href="module-rectangle.html#fitParameters">fitParameters</a></li><li data-type='method'><a href="module-rectangle.html#intersects">intersects</a></li></ul></li><li><a href="module-StateMachine.StateMachine.html">StateMachine</a><ul class='methods'><li data-type='method'><a href="module-StateMachine.StateMachine.html#goto">goto</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#gotoTemp">gotoTemp</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#log">log</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#matchMode">matchMode</a></li><li data-type='method'><a href="module-StateMachine.StateMachine.html#toggle">toggle</a></li></ul></li><li><a href="module-Vector3.html">Vector3</a><ul class='methods'><li data-type='method'><a href="module-Vector3.html#add">add</a></li><li data-type='method'><a href="module-Vector3.html#constrain">constrain</a></li><li data-type='method'><a href="module-Vector3.html#copy">copy</a></li><li data-type='method'><a href="module-Vector3.html#mult">mult</a></li><li data-type='method'><a href="module-Vector3.html#normalize">normalize</a></li><li data-type='method'><a href="module-Vector3.html#sub">sub</a></li></ul></li><li><a href="module-worker.html">worker</a><ul class='methods'><li data-type='method'><a href="module-worker.html#runSingle">runSingle</a></li><li data-type='method'><a href="module-worker.html#~handleMessage">handleMessage</a></li><li data-type='method'><a href="module-worker.html#~init">init</a></li><li data-type='method'><a href="module-worker.html#~setData">setData</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-array.html">array</a><ul class='methods'><li data-type='method'><a href="module-array.html#.average">average</a></li><li data-type='method'><a href="module-array.html#.equals">equals</a></li><li data-type='method'><a href="module-array.html#.last">last</a></li><li data-type='method'><a href="module-array.html#.max">max</a></li><li data-type='method'><a href="module-array.html#.min">min</a></li><li data-type='method'><a href="module-array.html#.roll">roll</a></li><li data-type='method'><a href="module-array.html#.sum">sum</a></li></ul></li><li><a href="module-dom.html">dom</a><ul class='methods'><li data-type='method'><a href="module-dom.html#.copyToClipboard">copyToClipboard</a></li><li data-type='method'><a href="module-dom.html#.createElement">createElement</a></li><li data-type='method'><a href="module-dom.html#.getMeta">getMeta</a></li><li data-type='method'><a href="module-dom.html#.popup">popup</a></li></ul></li><li><a href="module-math.html">math</a><ul class='methods'><li data-type='method'><a href="module-math.html#.constrain">constrain</a></li><li data-type='method'><a href="module-math.html#.gauss">gauss</a></li><li data-type='method'><a href="module-math.html#.map">map</a></li><li data-type='method'><a href="module-math.html#.smoothStep">smoothStep</a></li></ul></li><li><a href="module-NumpyLoader.html">NumpyLoader</a></li><li><a href="module-promises.html">promises</a><ul class='methods'><li data-type='method'><a href="module-promises.html#.frame">frame</a></li><li data-type='method'><a href="module-promises.html#.log">log</a></li><li data-type='method'><a href="module-promises.html#.millis">millis</a></li><li data-type='method'><a href="module-promises.html#.pauseChainFor">pauseChainFor</a></li><li data-type='method'><a href="module-promises.html#.seconds">seconds</a></li></ul></li><li><a href="module-Quadtree.html">Quadtree</a><ul class='methods'><li data-type='method'><a href="module-Quadtree.html#getPoints">getPoints</a></li><li data-type='method'><a href="module-Quadtree.html#insert">insert</a></li><li data-type='method'><a href="module-Quadtree.html#insertMulti">insertMulti</a></li><li data-type='method'><a href="module-Quadtree.html#setData">setData</a></li><li data-type='method'><a href="module-Quadtree.html#subdivide">subdivide</a></li></ul></li><li><a href="module-rectangle.html">rectangle</a><ul class='methods'><li data-type='method'><a href="module-rectangle.html#.fromDom">fromDom</a></li><li data-type='method'><a href="module-rectangle.html#.fromMinMax">fromMinMax</a></li><li data-type='method'><a href="module-rectangle.html#.fromObj">fromObj</a></li><li data-type='method'><a href="module-rectangle.html#contains">contains</a></li><li data-type='method'><a href="module-rectangle.html#fitParameters">fitParameters</a></li><li data-type='method'><a href="module-rectangle.html#intersects">intersects</a></li></ul></li><li><a href="module-StateMachine.html">StateMachine</a></li><li><a href="module-Vector3.html">Vector3</a><ul class='methods'><li data-type='method'><a href="module-Vector3.html#add">add</a></li><li data-type='method'><a href="module-Vector3.html#constrain">constrain</a></li><li data-type='method'><a href="module-Vector3.html#copy">copy</a></li><li data-type='method'><a href="module-Vector3.html#mult">mult</a></li><li data-type='method'><a href="module-Vector3.html#normalize">normalize</a></li><li data-type='method'><a href="module-Vector3.html#sub">sub</a></li></ul></li><li><a href="module-worker.html">worker</a><ul class='methods'><li data-type='method'><a href="module-worker.html#runSingle">runSingle</a></li><li data-type='method'><a href="module-worker.html#~handleMessage">handleMessage</a></li><li data-type='method'><a href="module-worker.html#~init">init</a></li><li data-type='method'><a href="module-worker.html#~setData">setData</a></li></ul></li><li></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">StateMachine.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @module StateMachine */
+
+/**
+ * Manages an app's state
+ */
+export class StateMachine {
+  /**
+    * @typedef {Object} options
+    * @property {string[]} options.modes - The list of modes this state machine may go to
+    * @property {BeforeEachCallback} options.beforeEach
+    * @property {OnChangeCallback} options.onChange
+    * @property {'quiet'|'normal'|'detailed'} options.logLevel
+   */
+  constructor({modes, beforeEach, onChange, logLevel}) {
+    this.modes = modes;
+    this.modeClasses = this.modes.map((mode) => `mode-${mode}`);
+
+    this.beforeEach = beforeEach;
+    this.onChange = onChange;
+
+    this.logLevels = ['quiet', 'normal', 'detailed'];
+    this.logLevel = this.logLevels.indexOf(logLevel || 'normal');
+    this.stackCount = -1;
+
+    this.current = null;
+    this.previous = null;
+  }
+
+  /**
+   * Change to the required mode
+   * @param {string} mode - the desired mode
+   */
+  goto(mode) {
+    this._goto(mode, { cancelTemp: true });
+  }
+
+  /**
+   * Tempoarily goes to the required mode, and comes back after the delay.
+   * Edge cases:
+   * - If the regular 'goto' is called before the delay expires, it is cancelled.
+   * - If gotoTemp is called before the delay expires, the delay is 'reset' to
+   * the new value
+   * - The beforeEach and onChange methods are called as usual, when the mode
+   * actually changes
+   * @param {string} mode
+   * @param {string} delay
+   */
+  gotoTemp(mode, delay) {
+    // Clear current timeout so that we set the timeout to the new delay
+    if (this.tempTimeout) clearTimeout(this.tempTimeout);
+    if (!this.tempStartMode) this.tempStartMode = this.current;
+
+    // setup the delay
+    this.tempTimeout = setTimeout(() => {
+      this.tempTimeout = null;
+      this.goto(this.tempStartMode);
+      this.tempStartMode = null;
+    }, delay);
+
+    // goto the temp mode, without cancelling the delay we just set up
+    this._goto(mode, {cancelTemp: false});
+  }
+
+  /**
+   * Internal goto method. Exposes more options than the public one (which calls
+   * this one with preset options)
+   * @private
+   * @param {string} mode - The mode to go to
+   * @param {Object} options
+   * @property {boolean} options.cancelTemp - wether to cancel gotoTemp (if any is in progress)
+   */
+  _goto(mode, {cancelTemp}) {
+    if (typeof mode !== 'string') throw new Error('mode should be a string');
+    if (mode.length === 0) throw new Error('mode can\'t be an empty string');
+    if (this.stackCount > 50) {
+      throw new Error('Stack count > 50. This is probably an infinite recursion in the beforeEach '+
+        'method...');
+    }
+    this.stackCount += 1;
+    this.log(`${this.current} -> ${mode}`, 'detailed', this.stackCount);
+
+    if (cancelTemp &amp;&amp; this.tempTimeout) {
+      this.log('cancel temp', 'detailed', this.stackCount);
+      clearTimeout(this.tempTimeout);
+    }
+
+    if (mode === this.current) {
+      this.stackCount -= 1;
+      return;
+    }
+    if (!this.modes.includes(mode)) throw new Error(`unexpected mode: ${mode}`);
+
+    if (this.beforeEach) {
+      this.beforeEach(this.current, mode, () => {
+        this._commitGoto(mode);
+      }, this);
+    } else this._commitGoto(mode);
+    this.stackCount -= 1;
+  }
+
+  /**
+   * Actually switches modes, after all the checks have been made
+   * @private
+   * @param {string} mode - The mode to go to
+   */
+  _commitGoto(mode) {
+    if (typeof document !== 'undefined') {
+      document.body.classList.remove(...this.modeClasses);
+      document.body.classList.add(`mode-${mode}`);
+    }
+
+    this.previous = this.current;
+    this.current = mode;
+
+    this.log(`${this.previous} => ${this.current}`, 'normal');
+
+    if (this.onChange) this.onChange(this.previous, this.current);
+
+    if (!this.previous) this.previous = this.current;
+  }
+
+  /**
+   * Toggles between the two given modes:
+   * if mode1 is active, go to mode2 (and vice versa)
+   * If none of the modes is active, go to mode1
+   * If only mode1 is set, toggle between mode1 and previous mode
+   * @param {Mode} mode1
+   * @param {Mode} mode2
+   */
+  toggle(mode1, mode2 = null) {
+    // eslint-disable-next-line no-param-reassign
+    if (!mode2) mode2 = this.previous;
+    if (this.current === mode1) this.goto(mode2);
+    else if (this.current === mode2) this.goto(mode1);
+    else this.goto(mode1);
+  }
+
+  /**
+   * @param  {...String} modes strings to match with the current mode name
+   * @return {boolean} true if currentMode matches one of the modes. This is a shorthand for the
+   * equivalent: modes.includes(currentMode)
+   */
+  matchMode(...modes) {
+    return modes.includes(this.current);
+  }
+
+  /**
+   * @param {string} message
+   * @param {'quiet'|'normal'|'detailed'} level
+   * @param {Number} _indent Used internally, do not use
+   */
+  log(message, level = 'normal', _indent = 0) {
+    // get numeric log level
+    const logLevel = this.logLevels.indexOf(level);
+    // log when appropriate
+    if (this.logLevel >= logLevel) {
+      const indentStr = ' '.repeat(indent);
+      console.log(`[State machine] ${indentStr}${message}`);
+    }
+  }
+}
+
+/**
+ * A function that will be called to accept, reject or redirect a mode change.
+ * @callback BeforeEachCallback
+ * @param {string} currentMode - The current mode of the state machine
+ * @param {string} targetMode - The requested mode
+ * @param {function} next - Call this function to proceed with the mode change
+ */
+
+/**
+  * A function called after every successfull mode change
+  * @callback OnChangeCallback
+  * @param {string} previous - The previous mode of the state machine
+  * @param {string} current - The new mode of the state machine
+  */
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sat Oct 19 2019 17:27:53 GMT+0200 (Central European Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

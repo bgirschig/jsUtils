@@ -1,0 +1,31 @@
+{
+  "name": "js_utils",
+  "version": "1.0.0",
+  "description": "A collection of javascript utities, that have proven useful on mutiple projects",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "author": "bgirschig",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "core-js": "3.2.1",
+    "docdash": "^1.1.1",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^3.0.0",
+    "jsdoc": "^3.6.3",
+    "jsdoc-webpack-plugin": "^0.2.0",
+    "webpack": "^4.39.3"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "webpack-cli": "^3.3.8"
+  }
+}
